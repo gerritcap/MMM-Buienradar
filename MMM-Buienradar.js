@@ -52,7 +52,8 @@ Module.register("MMM-Buienradar", {
 
 		var frame = document.createElement('iframe');
 		frame.className = 'map';
-		frame.src = 'https://gadgets.buienradar.nl/gadget/zoommap/?lat=' + this.config.lat + '&lng=' + this.config.lon + '&overname=2&zoom=' + zoom + '&size=2b&voor=' + (this.config.forecast ? '1' : '0');
+	  	//frame.src = 'https://gadgets.buienradar.nl/gadget/zoommap/?lat=' + this.config.lat + '&lng=' + this.config.lon + '&overname=2&zoom=' + zoom + '&size=2b&voor=' + (this.config.forecast ? '1' : '0');
+		frame.src = 'https://gadgets.buienradar.nl/gadget/zoommap/?lat=' + this.config.lat + '&lng=' + this.config.lon + '&overname=2&zoom=' + zoom + '&size=2&voor=' + (this.config.forecast ? '1' : '0');
 		mapContainer.appendChild(frame);
 
     return mapContainer;
